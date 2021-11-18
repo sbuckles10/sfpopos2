@@ -1,10 +1,9 @@
-
 import React from 'react'
 import logo from './logo.svg'
 import './POPOSSpace.css';
 
 function POPOSSpace(props) {
-  const { name, image, address } = props
+  const { name, image, address, hours } = props
   return (
     <div className="POPOSSpace">
       <img
@@ -13,8 +12,9 @@ function POPOSSpace(props) {
         height="300"
         alt="Hello"
       />
-      <h1>{props.name}</h1>
-      <div>{props.address}</div>
+      <h1>{name}</h1>
+      <div>{address}</div>
+      <div>{hours}</div>
     </div>
   )
 }
