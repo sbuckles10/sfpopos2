@@ -19,9 +19,11 @@ function POPOSSpace(props) {
           {name}
         </Link>
       </h1>
-      <div>{address}</div>
-      <div>{hours}</div>
-    </div>
+      <div className="POPOSSpace-info">
+        <div>{address}</div>
+        <div>{hours}</div>
+      </div>
+    </div>  
   )
 }
 
